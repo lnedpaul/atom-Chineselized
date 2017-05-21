@@ -1,6 +1,6 @@
-# Atom - Chinese(Simplified) Menu | 喜欢的话请给个 Star 吧~
+# Atom 1.17.0汉化
 
-Atom  的简体中文汉化语言包,目前最全的汉化包。包含菜单汉化、右键菜单汉化以及设置汉化
+根据chinakids同学的[atom-simplified-chinese-menu](https://github.com/chinakids/aatom-simplified-chinese-menu)修改的汉化包
 
 ![screenshot](https://github.com/chinakids/atom-chinese-menu/raw/master/screenshot/screenshot.png)
 
@@ -11,13 +11,7 @@ Atom  的简体中文汉化语言包,目前最全的汉化包。包含菜单汉�
 ### 说明
 
 ```
-  作者在翻译过程中并没有完全照翻官方原文内容，在保证官方原意的基础上尽可能的贴近使用口语与理解，如果有翻译错误或容易产生歧义的地方欢迎来 Github 的 Issues 指出来~
-
-  我们将共同学习共同进步~欢迎共同交流~
-
-  如果喜欢本插件，请在 Github 或者 Atom shop 给我给 star ~ 3Q~
-
-  By. chinakids
+  刚学习使用Atom，全英语环境对于初学很不友好，又喜欢追新，在官方汉化缺失的情况下，不得不自己摸索着汉化一次。
 ```
 
 - 关于插件设置
@@ -55,7 +49,7 @@ Atom  的简体中文汉化语言包,目前最全的汉化包。包含菜单汉�
 
 ### 平台测试
 
-linux，mac，win 均通过测试
+只通过了本机Win10的测试
 
 
 ### LICENSE
