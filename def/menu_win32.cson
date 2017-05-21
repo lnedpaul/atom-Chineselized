@@ -31,8 +31,6 @@ Menu:
         value: "用户代码片段..."
       "Stylesheet...":
         value: "用户样式设置..."
-      "VERSION":
-        value: "版本"
       "&Save":
         value: "保存(&S)"
       "Save &As...":
@@ -53,9 +51,9 @@ Menu:
     value: "编辑(&E)"
     submenu:
       "&Undo":
-        value: "撤销(&U)"
+        value: "撤销操作(&U)"
       "&Redo":
-        value: "重复(&R)"
+        value: "重复操作(&R)"
       "Cu&t":
         value: "剪切(&T)"
       "&Copy":
@@ -118,10 +116,10 @@ Menu:
             value: "折叠(&F)"
           "&Unfold":
             value: "展开(&U)"
-          "Unfold &All":
-            value: "展开所有(&A)"
           "Fol&d All":
             value: "折叠所有(&D)"
+          "Unfold &All":
+            value: "展开所有(&A)"
           "Fold Level 1":
             value: "展开一层"
           "Fold Level 2":
@@ -198,8 +196,8 @@ Menu:
             value: "打开开发模式(&D)"
           "&Reload Window":
             value: "重新加载窗口"
-          "Run &Atom Specs":
-            value: "运行Atom规范(&A)"
+          "Run &Benchmark":
+            value: "运行测试规范(&B)"
           "Run Package &Specs":
             value: "运行Package规范(&S)"
           "Toggle Developer &Tools":
@@ -285,6 +283,13 @@ Menu:
   "&Packages":
     value: "扩展(&P)"
     submenu:
+      "Atom Beautify"
+        value:"Atom美化"
+        submenu:
+          "Beautify"
+          value:"美化"
+          "Debug"
+          value:"调试"
       "Command Palette":
         value: "命令面板"
         submenu:
