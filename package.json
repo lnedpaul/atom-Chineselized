@@ -1,25 +1,21 @@
 {
-  "name": "simplified-chinese-menu",
+  "name": "chineselized",
   "main": "./lib/main",
-  "version": "5.3.1",
-  "description": "Atom 的简体中文语言包，完整汉化，兼容所有已发布版本 Atom",
+  "version": "0.0.2",
+  "description": "Atom 简体中文",
   "repository": {
     "type": "git",
-    "url": "https://github.com/chinakids/atom-simplified-chinese-menu"
+    "url": "https://github.com/lnedpaul/atom-Chineselized"
   },
   "license": "MIT",
-  "keywords": [
-    "language",
-    "chinesee",
-    "simplified",
-    "简体中文",
-    "汉化",
-    "chinakids"
-  ],
   "engines": {
     "atom": ">=0.174.0 <2.0.0"
   },
-  "dependencies": {
-    "cson": "3.0.1"
-  }
+  "dependencies": {},
+  "readme":"# Atom - Chinese Menu",
+  "readmeFilename": "README.md",
+  "bugs": {
+    "url": "https://github.com/lnedpaul/atom-Chineselized/issues"
+  },
+  "homepage": "https://github.com/lnedpaul/atom-Chineselized"
 }
