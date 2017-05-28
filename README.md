@@ -1,6 +1,9 @@
 # Atom 1.17.0汉化
 
 根据chinakids同学的[atom-simplified-chinese-menu](https://github.com/chinakids/aatom-simplified-chinese-menu)修改的汉化包
+重新参考了syon的[Atom - Japanese Menu](https://github.com/syon/atom-japanese-menu)1.13.0版本代码
+Sheng-Bo的[atom-cht-menu](https://github.com/Sheng-Bo/atom-cht-menu)
+
 
 ### 说明
 
@@ -10,4 +13,4 @@
 
 ### 平台测试
 
-只通过了本机Win10的测试
+在Win10上进行的汉化，暂时不会做linux和Mac的部分
