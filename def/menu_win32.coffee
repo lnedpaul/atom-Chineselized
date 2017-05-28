@@ -1,12 +1,12 @@
 module.exports = {
 Menu:
   "&File":
-    value: "文件(&F)"
+    value: "文件"
     submenu:
       "New &Window":
-        value: "新窗口"
+        value: "新建窗口"
       "&New File":
-        value: "新文件"
+        value: "新建文件"
       "&Open File…":
         value: "打开文件…"
       "Open Folder…":
@@ -27,9 +27,9 @@ Menu:
       "Init Script…":
         value: "初始脚本…"
       "Keymap…":
-        value: "键位图…"
+        value: "快捷键设置…"
       "Snippets…":
-        value: "摘录…"
+        value: "代码摘录…"
       "Stylesheet…":
         value: "样式表…"
       "&Save":
@@ -37,11 +37,11 @@ Menu:
       "Save &As…":
         value: "另存为…"
       "Save A&ll":
-        value: "保存全部"
+        value: "全部保存"
       "&Close Tab":
         value: "关闭标签"
       "Close &Pane":
-        value: "关闭分屏"
+        value: "关闭面板"
       "Clos&e Window":
         value: "关闭窗口"
       "E&xit":
@@ -52,7 +52,7 @@ Menu:
     value: "编辑"
     submenu:
       "&Undo":
-        value: "撤销"
+        value: "还原"
       "&Redo":
         value: "重做"
       "Cu&t":
@@ -64,35 +64,34 @@ Menu:
       "&Paste":
         value: "粘贴"
       "Select &All":
-        value: "选择全部"
+        value: "全选"
       "&Toggle Comments":
-        value: "切换评论"
+        value: "注释切换"
       Lines:
         value: "行"
-        submenu:
           "&Indent":
-            value: "添加缩进"
+            value: "增加缩进"
           "&Outdent":
             value: "减少缩进"
           "&Auto Indent":
             value: "自动缩进"
           "Move Line &Up":
-            value: "向上移动"
+            value: "向上移动行"
           "Move Line &Down":
-            value: "向下移动"
+            value: "向下移动行"
           "Du&plicate Lines":
             value: "复制行"
           "D&elete Line":
             value: "删除行"
           "&Join Lines":
-            value: "加入行"
+            value: "合并行"
       Columns:
         value: "列"
         submenu:
           "Move Selection &Left":
-            value: "向左移动选择区域"
+            value: "向左移动所选对象"
           "Move Selection &Right":
-            value: "向右移动选择区域"
+            value: "向右移动所选对象"
       Text:
         value: "文本"
         submenu:
@@ -103,106 +102,106 @@ Menu:
           "Delete to End of &Word":
             value: "删除至词尾"
           "Delete to Previous Word Boundary":
-            value: "删除前一个词"
+            value: "删除前一词"
           "Delete to Next Word Boundary":
-            value: "删除后一个词"
+            value: "删除后一词"
           "&Delete Line":
             value: "删除整行"
           "&Transpose":
-            value: "前后互换"
+            value: "前后转换"
       Folding:
-        value: "折叠"
+        value: "折叠代码"
         submenu:
           "&Fold":
-            value: "合拢折叠"
+            value: "折叠"
           "&Unfold":
-            value: "展开折叠"
+            value: "展开"
           "Unfold &All":
-            value: "展开所有折叠"
+            value: "展开全部"
           "Fol&d All":
-            value: "合拢所有折叠"
+            value: "折叠全部"
           "Fold Level 1":
-            value: "折叠层级1"
+            value: "折叠第1层"
           "Fold Level 2":
-            value: "折叠层级2"
+            value: "折叠第2层"
           "Fold Level 3":
-            value: "折叠层级3"
+            value: "折叠第3层3"
           "Fold Level 4":
-            value: "折叠层级4"
+            value: "折叠第4层"
           "Fold Level 5":
-            value: "折叠层级5"
+            value: "折叠第5层"
           "Fold Level 6":
-            value: "折叠层级6"
+            value: "折叠第6层"
           "Fold Level 7":
-            value: "折叠层级7"
+            value: "折叠第7层"
           "Fold Level 8":
-            value: "折叠层级8"
+            value: "折叠第8层"
           "Fold Level 9":
-            value: "折叠层级9"
+            value: "折叠第9层"
       "Reflow Selection":
-        value: "浮动选择区域"
+        value: "重排所选区域"
       Bookmark:
         value: "书签"
         submenu:
           "View All":
-            value: "显示全部"
+            value: "查看全部书签"
           "Toggle Bookmark":
-            value: "书签切换"
+            value: "切换书签"
           "Jump to Next Bookmark":
-            value: "跳到下一个书签"
+            value: "跳转至下一个书签"
           "Jump to Previous Bookmark":
-            value: "跳到前一个书签"
+            value: "跳转至上一个书签"
       "Select Encoding":
-        value: "选择文件编码"
+        value: "选择编码"
       "Go to Line":
-        value: "前往指定行"
+        value: "跳转至指定行"
       "Select Grammar":
-        value: "选择语法格式"
+        value: "选择编程语言"
   "&View":
     value: "查看"
     submenu:
       "Toggle &Full Screen":
-        value: "全屏切换"
+        value: "切换全屏"
       "Toggle Menu Bar":
-        value: "菜单栏切换"
+        value: "切换菜单栏"
       Panes:
-        value: "分屏"
+        value: "面板"
         submenu:
           "Split Up":
-            value: "分屏向上拆分"
+            value: "面板向上拆分"
           "Split Down":
-            value: "分屏向下拆分"
+            value: "面板向下拆分"
           "Split Left":
-            value: "分屏向左拆分"
+            value: "面板向左拆分"
           "Split Right":
-            value: "分屏向右拆分"
+            value: "面板向右拆分"
           "Focus Next Pane":
-            value: "聚焦下一个分屏"
+            value: "移至后一个面板"
           "Focus Previous Pane":
-            value: "聚焦上一个分屏"
+            value: "移至前一个面板"
           "Focus Pane Above":
-            value: "聚焦上方分屏"
+            value: "移至上方面板"
           "Focus Pane Below":
-            value: "聚焦下方分屏"
+            value: "移至下方面板"
           "Focus Pane On Left":
-            value: "聚焦左方分屏"
+            value: "移至左方面板"
           "Focus Pane On Right":
-            value: "聚焦右方分屏"
+            value: "移至右方面板"
           "Close Pane":
-            value: "关闭分屏"
+            value: "关闭面板"
       Developer:
         value: "开发者"
         submenu:
           "Open In &Dev Mode…":
-            value: "打开开发模式"
+            value: "在开发者模式中打开…"
           "&Reload Window":
-            value: "重新加载视窗"
+            value: "重新加载窗口"
           "Run Package &Specs":
-            value: "运行该规范包"
+            value: "执行扩展规格"
           "Run Benchmarks":
-            value: "运行基准"
+            value: "执行基准测试"
           "Toggle Developer &Tools":
-            value: "开发工具"
+            value: "开发者工具"
       "&Increase Font Size":
         value: "增大字号"
       "&Decrease Font Size":
@@ -210,79 +209,79 @@ Menu:
       "Re&set Font Size":
         value: "重设字号"
       "Toggle Soft &Wrap":
-        value: "自动翻卷切换"
+        value: "自动换行"
       "Toggle Command Palette":
-        value: "命令调色板切换"
+        value: "指令面板"
       "Toggle Tree View":
-        value: "树状图切换"
+        value: "树状图"
       "Toggle Tool Bar":
         value: "工具栏切换"
   "&Selection":
-    value: "选择"
+    value: "选取"
     submenu:
       "Add Selection &Above":
-        value: "向上扩大选择范围"
+        value: "向上选取"
       "Add Selection &Below":
-        value: "向下扩大选择范围"
+        value: "向下选取"
       "S&plit into Lines":
-        value: "分割成行"
+        value: "多行同时操作模式"
       "Single Selection":
-        value: "取消选择"
+        value: "解除同时操作模式"
       "Select to &Top":
-        value: "选择至顶部"
+        value: "选取至文件顶部"
       "Select to Botto&m":
-        value: "选择至底部"
+        value: "选取至文件底部"
       "Select &Line":
-        value: "选择行"
+        value: "选取行"
       "Select &Word":
-        value: "选择字"
+        value: "选取词"
       "Select to Beginning of W&ord":
-        value: "选择至字首"
+        value: "选取至词首"
       "Select to Beginning of L&ine":
-        value: "选择至行首"
+        value: "选取至行首"
       "Select to First &Character of Line":
-        value: "选择至行第一个字符"
+        value: "选取至行內的第一个字符"
       "Select to End of Wor&d":
-        value: "选择至字尾"
+        value: "选取至词尾"
       "Select to End of Lin&e":
         value: "选择至行尾"
       "Select Inside Brackets":
-        value: "选择括号内"
+        value: "选择括号內容"
   "F&ind":
-    value: "查询(&I)"
+    value: "查找"
     submenu:
       "Find in Buffer":
-        value: "缓存内查找"
+        value: "文件编辑区中查找"
       "Replace in Buffer":
-        value: "缓存内替换"
+        value: "文件编辑区中替换"
       "Select Next":
-        value: "查找下一个"
+        value: "选择下一个"
       "Select All":
-        value: "查找所有"
+        value: "全选"
       "Toggle Find in Buffer":
-        value: "缓存内查找切换"
+        value: "编辑区查找面板切换"
       "Find in Project":
         value: "项目中查找"
       "Toggle Find in Project":
-        value: "项目中查找切换"
+        value: "项目中查找面板切换"
       "Find All":
-        value: "查询所有"
+        value: "全部查找"
       "Find Next":
-        value: "查询下一个"
+        value: "查找下一个"
       "Find Previous":
-        value: "查询前一个"
+        value: "查找前一个"
       "Replace Next":
         value: "替换下一个"
       "Replace All":
-        value: "替换所有"
+        value: "全部替换"
       "Clear History":
-        value: "清楚查找历史"
+        value: "清除查找历史"
       "Find Buffer":
-        value: "查询缓存"
+        value: "查找编辑区文件"
       "Find File":
-        value: "查询文件"
+        value: "查找文件"
       "Find Modified File":
-        value: "查询更改后文件"
+        value: "查找更改后文件"
   "&Packages":
     value: "扩展包"
   "&Help":
@@ -291,17 +290,19 @@ Menu:
       "View &Terms of Use":
         value: "查看使用条款"
       "View &License":
-        value: "查看许可证"
+        value: "查看授权"
       "&Documentation":
-        value: "文档"
+        value: "说明文档"
+      Roadmap:
+        value: "发展路线图"
       "Check for Update":
         value: "检查更新"
       "Frequently Asked Questions":
         value: "常见问题"
       "Community Discussions":
-        value: "讨论社区"
+        value: "社区讨论"
       "Report Issue":
-        value: "问题报告"
+        value: "报告问题"
       "Search Issues":
         value: "搜索问题"
       "About Atom":

@@ -45,6 +45,6 @@ class PreferencesUtil
     for btn in sv.querySelectorAll('.meta-controls .icon-playback-pause span')
       @applyTextWithOrg(btn, "停用")
     for btn in sv.querySelectorAll('.meta-controls .icon-playback-play span')
-      @applyTextWithOrg(btn, "启动")
+      @applyTextWithOrg(btn, "启用")
 
 module.exports = PreferencesUtil

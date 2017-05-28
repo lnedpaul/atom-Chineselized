@@ -15,7 +15,7 @@ Settings:
     }
     {
       label: "Keybindings"
-      value: "键位绑定"
+      value: "快捷键绑定"
     }
     {
       label: "Packages"
@@ -36,12 +36,12 @@ Settings:
   ]
   sectionHeadings: [
     {label: "Core Settings", value: "核心设置"}
-    {label: "Editor Settings", value: "编辑器折设置"}
+    {label: "Editor Settings", value: "编辑器设置"}
     {label: "System Settings", value: "系统设置"}
-    {label: "Keybindings", value: "键位绑定"}
-    {label: "Installed Packages", value: "安装的扩展包"}
+    {label: "Keybindings", value: "快捷键绑定"}
+    {label: "Installed Packages", value: "已安装扩展包"}
     {label: "Choose a Theme", value: "选择一个主题"}
-    {label: "Installed Themes", value: "安装的主题"}
+    {label: "Installed Themes", value: "已安装主题"}
     {label: "Available Updates", value: "可用更新"}
     {label: "Install Packages", value: "扩展安装"}
     {label: "Featured Packages", value: "精选的扩展包"}
@@ -49,7 +49,7 @@ Settings:
     {label: "Featured Themes", value: "精选的主题"}
   ]
   subSectionHeadings: [
-    {label: "Invisible", value: "不可视文字"}
+    {label: "Invisible", value: "隐藏文字"}
     {label: "Community Packages", value: "社区扩展包"}
     {label: "Core Packages", value: "核心扩展包"}
     {label: "Development Packages", value: "开发扩展包"}
@@ -63,103 +63,97 @@ Settings:
     notes: [
       {
         id: 'core-settings-note'
-        html: '这是与文本编辑行为无关的核心部分的设置项。由于存在设置单独包装独特的项目的情况，
-               请通过点击<a class="link packages-open">包列表</a>中的包卡检查设置。'
+        html: '以下为文字编辑功能以外的Atom功能设置，个别扩展包可能包含自己的设置。若要浏览某个扩展包的设置，请到「<a class="link packages-open">已安装的扩展包</a>」卡片列表中选择该扩展包的设置。'
       }
       {
         id: 'editor-settings-note'
-        html: '这是与文本编辑的行为相关的设置项。根据字标准，这些设置可能会被覆盖，
-               请通过点击<a class="link packages-open">包列表</a>中的包卡检查设置。'
+        html: '以下为文字编辑相关的设置。部分设置可能会被相关编程语言的扩展包所覆盖。如果要浏览编程语言的扩展包设置，请到「<a class="link packages-open">已安装的扩展包</a>」卡片列表中设置该语言。'
       }
     ]
     controls: [
       {
         id: 'core.allowPendingPaneItems'
-        title: "使用预览选项卡"
-        desc: "在树视图中选择文件时，在预览状态下打开选项卡。
-               在预览中，选项卡名称为斜体，当选择另一个文件时，将使用该选项卡。双击或开始编辑将释放预览状态。"
+        title: "允许挂起面板项目"
+        desc: "许在同一个标签页内连续预览文件，而不需将文件逐一加入面板。例如：在文件列表面板中用鼠标单击数个文件时，即可在挂起的标签页内连续预览。"
       }
       {
         id: 'core.audioBeep'
-        title: "哔声"
-        desc: "如果进程没有按预期运行或者没有获得任何结果，系统会发出蜂鸣声。"
+        title: "提示音"
+        desc: "当操作无效或无结果可显示时，使用提示音警告。"
       }
       {
         id: 'core.automaticallyUpdate'
         title: "自动更新"
-        desc: "当发现有发布的Atom的新版本将自动更新。"
+        desc: "当发现有新版本时将自动更新。"
       }
       {
         id: 'core.closeDeletedFileTabs'
-        title: "关闭删除文件的标签"
+        title: "关闭已删除文件标签"
         desc: "Atom自动关闭已删除文件的标签。"
       }
       {
         id: 'core.autoHideMenuBar'
         title: "自动隐藏菜单栏"
-        desc: "您可以用Alt键切换隐藏菜单栏。此设置只支持Windows和Linux。"
+        desc: "自动隐藏菜单栏后，可以按下Alt鍵使其暂时出现。这个设置只适用于Windows和Linux操作系统。"
       }
       {
         id: 'core.closeEmptyWindows'
-        title: "像一个标签一样关闭空窗口"
-        desc: "关闭选项卡窗口选项卡既不状态分屏如果给出命令，并关闭窗口。"
+        title: "自动关闭空窗口"
+        desc: "当试图关闭标签页时，如果该窗口无其他开启的标签页或面板，则关闭该窗口。"
       }
       {
         id: 'core.destroyEmptyPanes'
-        title: "自动关闭空分屏"
-        desc: "如果关闭最后一个标签打开的，也封闭分屏。"
+        title: "自动关闭空面板"
+        desc: "当分割面板中最后一个标签页被关闭时，也关闭该分割面板。"
       }
       {
         id: 'core.excludeVcsIgnoredPaths'
-        title: "排除已经通过版本控制系统忽略的路径"
-        desc: "文件和已通过版本控制系统在使用中忽视在当前项目中，模糊搜索和搜索目录，它会在更换被忽略。
-               例如，通过使用Git的项目中的.gitignore文件中定义的路径是解决它。
-               它也可以设置为忽略个别包此设置的单独的文件和文件夹。"
+        title: "让扩展包排除「版本控制系统(VCS)」指定忽略的路径"
+        desc: "让某些扩展包排除目前项目的VCS制定忽略的文件或目录，如：模糊查找、查找与取代。举例来说，使用Git的项目将忽略.gitignore中指定的路径。另外，个别的扩展包可能包含额外的关于VCS忽略文件和文件夹的设置。"
       }
       {
         id: 'core.fileEncoding'
         title: "文件编码"
-        desc: "它规定了读取和写入文件的默认字符集。"
+        desc: "指定读写文件时所用的默认字符集编码。"
       }
       {
         id: 'core.followSymlinks'
-        title: "按照符号链接"
-        desc: "当搜索和模糊搜索，打开一个文件，它将会被使用。"
+        title: "允许使用符号链接"
+        desc: "使用模糊查找时，允许查找以及允许打开使用符号链接所定义的项目。"
       }
       {
         id: 'core.ignoredNames'
-        title: "被忽略的文件"
-        desc: "它列出了glob模式忽视。匹配的文件和目录，它将不再显示在模糊搜索，或树视图。
-               它也可以设置为忽略个别包此设置的单独的文件和文件夹。"
+        title: "忽略的文件/文件夹名"
+        desc: "在此输入glob模式字符串匹配规则。符合规则的文件和目录将会被某些扩展包忽略，如：模糊查找和文件列表面板。个别的扩展包可能包含额外的忽略规则设定。"
       }
       {
         id: 'core.openEmptyEditorOnStart'
-        title: "打开在启动时的一次新的编辑器"
-        desc: "自动打开在启动时的一次新的编辑器。"
+        title: "启动时打开空白的编辑器"
+        desc: "启动Atom时自动打开空白的编辑器。"
       }
       {
         id: 'core.projectHome'
-        title: "项目主页"
-        desc: "指定要在其中放置项目组的目录。这是在包产生创建的软件包将在这里默认存储目标。"
+        title: "默认的项目根目录"
+        desc: "所有项目都假定被放在该目录下。使用 Package Generator 生成的扩展包原始文件也会被放在该目录下。"
       }
       {
         id: 'core.reopenProjectMenuCount'
-        title: "项目历史的显示数"
-        desc: "它指定菜单中的“打开从Project历史记录”中显示的项目数量。"
+        title: "「重新打开项目」菜单的条目数"
+        desc: "在「重新打开项目」菜单中显示多少个最近的项目。"
       }
       {
         id: 'core.restorePreviousWindowsOnStart'
-        title: "在启动时恢复上一次的窗口显示状态"
-        desc: "当您从图标或Atom命令开始恢复上次打开了Atom的所有窗口。"
+        title: "在启动时恢复之前打开的窗口"
+        desc: "当选中时，通过图标启动或通过命令行自身的<code>atom</code>命令启动Atom时，恢复所有Atom窗口的最后状态; 否则加载空白环境。"
       }
       {
         id: 'core.telemetryConsent'
-        title: "Atom要发送一个远程测量结果球队"
-        desc: "允许发送使用统计信息和崩溃报告，以Atom团队改进了帮助功能。"
+        title: "向Atom小组发送遥测"
+        desc: "允许将使用统计信息和例外报告发送到Atom小组，以帮助改进产品。"
         select:
-          limited: "允许崩溃使用统计数据的传输和报告匿名限制"
-          no: "不要发送远程测量结果"
-          undecided: "尚未决定（在下次启动时重新确认）"
+          limited: "允许有限的匿名使用统计信息、异常和崩溃报告"
+          no: "不发送任何遥测数据"
+          undecided: "未定（Atom会在下次启动时再次询问）"
       }
       {
         id: 'core.useCustomTitleBar'
@@ -167,170 +161,168 @@ Settings:
       }
       {
         id: 'core.useProxySettingsWhenCallingApm'
-        title: "APM使用代理服务器设置调用时"
-        desc: "APM (Atom Package Manager) の 当调用APM的命令行工具，使用检测到的代理设置。"
+        title: "调用APM时使用代理服务器设置"
+        desc: "当调用APM(Atom Package Manager)的命令行工具时，使用检测到的代理服务器设置。"
       }
       {
         id: 'core.warnOnLargeFileLimit'
-        title: "尺寸警告当您打开一个沉重的文件"
-        desc: "从文件大小打开一个大文件之前，此警告您指定的警告（兆字节）的大小，当你打开一个沉重的文件。"
+        title: "大文件限制警告"
+        desc: "在打开大于此兆字节数的文件之前警告。"
       }
       {
         id: 'editor.atomicSoftTabs'
-        title: "原子软标签"
-        desc: "当光标移动，将跳过在标签宽度的空白软标签缩进。"
+        title: "Atomic Soft Tabs"
+        desc: "在移动光标经过前置的空格时，跳过一个制表符(tab)的长度。"
       }
       {
         id: 'editor.autoIndent'
         title: "自动缩进"
-        desc: "当您插入新行（新行），以自动移动光标位置缩进位置。"
+        desc: "在新增行时自动缩进游标，使其对齐上一行。"
       }
       {
         id: 'editor.autoIndentOnPaste'
-        title: "在粘贴时自动缩进"
-        desc: "它会自动缩进基础上，粘贴文本的上一行的缩进。"
+        title: "粘贴时自动缩进"
+        desc: "根据上一行自动缩进粘贴的文本内容。"
       }
       {
         id: 'editor.backUpBeforeSaving'
-        title: "保存前请备份"
-        desc: "所以这不属于该文件的内容，如果发生I/O错误丢失文件的储存过程中，创建备份的临时副本。"
+        title: "自动备"
+        desc: "生成一个临时备份，以免在保存过程中不幸产生的读写错误导致项目内容丢失。"
       }
       {
         id: 'editor.confirmCheckoutHeadRevision'
-        title: "为了确保当放弃修改回到HEAD修订"
-        desc: "命令 `Editor: Checkout Head Revision`使用HEAD 退房的修订破坏电流的变化前，显示确认对话框。"
+        title: "确认是否让Checkout变更HEAD"
+        desc: "当执行checkout将变更HEAD，或在最后一次commit后却放弃当前项目的变更时，弹出确认对话框。"
       }
       {
         id: 'editor.fontFamily'
-        title: "字体"
-        desc: "字体系列"
+        title: "编辑器字体"
+        desc: "指定文字编辑器使用的字体名。"
       }
       {
         id: 'editor.fontSize'
-        title: "字体大小"
-        desc: "字体大小(px)"
+        title: "文字大小"
+        desc: "编辑器内的文字高度，单位：像素(px)"
       }
       {
         id: 'editor.invisibles.cr'
-        title: "隐藏字符回车(Cr)"
-        desc: "回车(Microsoft结束线的风格字符)人物被画成（“显示不可见的字符”如果已经启用)"
+        title: "回车(Cr)显示为:"
+        desc: "<code>显示隐藏字符</code>设置打勾时，微软(Microsoft)格式的回车将用以下字符表示。"
       }
       {
         id: 'editor.invisibles.eol'
-        title: "隐藏文字改行(Eol)"
-        desc: "改行(\\n)人物被画成（如果您已启用“显示不可见字符”)"
+        title: "换行(Eol)显示为:"
+        desc: "<code>显示隐藏字符</code>设置打勾时，\\n 格式的换行将用以下字符表示。"
       }
       {
         id: 'editor.invisibles.space'
-        title: "隐藏字符空格"
-        desc: "（如果您已启用“显示不可见的字符”）空格字符被画成（前行结束后，该行的开头）"
+        title: "空格(space)显示为:"
+        desc: "<code>显示隐藏字符</code>设置打勾时，行首与行尾的空格将用以下字符表示。"
       }
       {
         id: 'editor.invisibles.tab'
-        title: "隐藏字符标签"
-        desc: "硬标签（\\t）人物被画成（如果您已启用“显示不可见字符”）"
+        title: "制表符(tab)显示为:"
+        desc: "<code>显示隐藏字符</code>设置打勾时，\\t 定位将用以下字符表示。"
       }
       {
         id: 'editor.lineHeight'
-        title: "行高度"
-        desc: "行高度(number)"
+        title: "行高"
+        desc: "编辑器內的文字行高，即文字大小(高度)的倍数。"
       }
       {
         id: 'editor.nonWordCharacters'
-        title: "不视为字字符的一部分"
-        desc: "字符确定单词的边界"
+        title: "不被视为单词的字符"
+        desc: "下列字符将不被视为单词，而是拿来作为单词的边界。"
       }
       {
         id: 'editor.preferredLineLength'
-        title: "位置的右边缘导向"
-        desc: "它指定包裹在许多的情况下的字符的文本“在右边缘导向软包裹物的位置”的位置被启用。"
+        title: "每一行的长度"
+        desc: "<code>自动换行</code>设置打勾后，定义每一行自动换行的长度，单位：字符。"
       }
       {
         id: 'editor.scrollPastEnd'
-        title: "滚动超出了最后一行"
-        desc: "最后一行，这样就不会在显示在编辑器中的一个点停止滚动。"
+        title: "滚动范围不受文档高度限制"
+        desc: "允许编辑器越过文档的最后一行继续向下滚动。"
       }
       {
         id: 'editor.scrollSensitivity'
         title: "滚动速度"
-        desc: "速度，你通过鼠标或触控板编辑器滚动"
+        desc: "指定编辑器中使用鼠标或触控板滚动的速度。"
       }
       {
         id: 'editor.showCursorOnSelection'
-        title: "显示光标到选择范围"
-        desc: "显示光标（I-束闪烁）当选择范围存在。"
+        title: "选取范围显示光标"
+        desc: "当选取范围时，显示I形的光标"
       }
       {
         id: 'editor.showIndentGuide'
-        title: "显示缩进指南"
-        desc: "它显示缩进引导到编辑器。"
+        title: "显示缩进对齐线"
+        desc: "在编辑器中显示缩进的对齐线。"
       }
       {
         id: 'editor.showInvisibles'
-        title: "显示不可见的字符"
-        desc: "显示选项卡和空间，换行符不可见的，如符号。"
+        title: "显示隐藏字符"
+        desc: "在编辑器中显示隐藏字符的代表符号，如制表符、空格或回车。"
       }
       {
         id: 'editor.showLineNumbers'
         title: "显示行号"
-        desc: "它显示在编辑器中的行号。"
+        desc: "在编辑器的侧方显示行号。"
       }
       {
         id: 'editor.softTabs'
-        title: "ソフトタブ"
-        desc: "タブ文字の代わりにスペースを連ねて挿入します。"
+        title: "Soft Tabs"
+        desc: "如果<code>制表符(tab)类型</code>设置为「自动(auto)」，而自动判断结果却失效时，则当此设定打勾时，会改用「soft tab」，否则将用「hard tab」插入制表符。"
       }
       {
         id: 'editor.softWrap'
-        title: "ソフトラップ"
-        desc: "ウィンドウ幅を超えた時に折り返して表示します。「右端ガイドの位置でソフトラップ」が有効の場合は「右端ガイドの位置」の設定値で折り返されます。"
+        title: "自动换行"
+        desc: "每行长度超过窗口宽度时，自动换行。然而当<code>在指定长度换行</code>设置打勾时，换行长度将使用<code>每一行的长度</code>内的数值，而不是窗口宽度。"
       }
       {
         id: 'editor.softWrapAtPreferredLineLength'
-        title: "右端ガイドの位置でソフトラップ"
-        desc: "「右端ガイドの位置」の設定値で折り返します。この設定はソフトラップがグローバルまたは作業中の言語で有効な場合のみ適用されます。"
+        title: "在指定长度换行"
+        desc: "文字长度超过<code>每一行的长度</code>内的数值时，自动换行。这项设置只有在<code>自动换行</code>设置打勾时，或菜单栏 > 查看 > 自动换行启用时才有效果。"
       }
       {
         id: 'editor.softWrapHangingIndent'
-        title: "ソフトラップ時のインデント幅"
-        desc: "「ソフトラップ」が有効な場合、ラップされた行に対し指定した文字数だけ追加でインデントします。"
+        title: "悬挂缩进"
+        desc: "<code>自动换行</code>设置打勾时，第二行以下额外缩进的长度，单位：字符。"
       }
       {
         id: 'editor.tabLength'
-        title: "タブ幅"
-        desc: "タブを表す際に使用されるスペースの数"
+        title: "制表符 (tab) 长度"
+        desc: "在此指定空白字符的数量，用以代表每个制表符 (tab) 的长度。"
       }
       {
         id: 'editor.tabType'
-        title: "タブタイプ"
-        desc: 'タブキーを押した際に挿入する文字の形式を指定します。"soft" はソフトタブ（Space）、"hard" はハードタブ（Tab）が使用されます。
-               "auto" はエディタがバッファの内容を自動判別します。自動判別は最初に見つけた行（コメント行を除く）の先頭にあるスペースで行われます。
-               自動判別できなかった場合はソフトタブが設定されます。'
+        title: "制表符 (tab) 类型"
+        desc: '当按下键盘制表定位键 (tab) 时，插入的字符。有三种类型：「auto」、「soft」或 「hard」。「soft」使用空格字符 (space)，「hard」使用制表符字符 (tab)。「auto」模式将会使用该行行首的空格字符或制表符字符。如果自动判断失效，则将会直接采用<code>Soft Tabs</code>中的设置值。'
       }
       {
         id: 'editor.undoGroupingInterval'
-        title: "取り消し操作単位"
-        desc: "ひとまとまりの操作と認識させて取り消し履歴に登録する間隔（ミリ秒）"
+        title: "合并一段时间内的还原动作"
+        desc: "编辑过程产生的还原动作历史纪录，将以此时间长度值进行合并，单位：毫秒。"
       }
       {
         id: 'editor.zoomFontWhenCtrlScrolling'
-        title: "Ctrl スクロールでフォントサイズを変える"
-        desc: "コントロールキーを押しながらスクロールを上下することでエディタのフォントサイズを拡大/縮小します。"
+        title: "使用Ctrl + 鼠标滚轮缩放文字大小"
+        desc: "使用Ctrl键和鼠标滚轮上下滚动改变编辑器内的文字大小。"
       }
       {
         id: 'system.windows.file-handler'
-        title: "ファイルを取扱うアプリとして登録する"
-        desc: "ファイルの関連付けを簡単にするために、Atom を「プログラムから開く…」の一覧に表示します。"
+        title: "注册Atom为文件处理程序"
+        desc: "在「打开方式」程序列表中显示 Atom ，以方便与文件类型关联。"
       }
       {
         id: 'system.windows.shell-menu-files'
-        title: "ファイルの右クリックメニューから開く"
-        desc: "エクスプローラでのファイル右クリックメニューに \"Open with Atom\" を追加します。"
+        title: "在【文件】右键菜单中显示Atom"
+        desc: "在文件管理器中的【文件】右键菜单中添加「使用Atom打开(Open with Atom)」选项。"
       }
       {
         id: 'system.windows.shell-menu-folders'
-        title: "フォルダの右クリックメニューから開く"
-        desc: "エクスプローラでのフォルダ右クリックメニューに \"Open with Atom\" を追加します。"
+        title: "在 文件夹 右键菜单中显示 Atom"
+        desc: "在文件管理器中的【文件夹】右键菜单中添加「使用Atom打开(Open with Atom)」选项。"
       }
     ]
   }
