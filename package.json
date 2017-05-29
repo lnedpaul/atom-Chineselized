@@ -1,7 +1,7 @@
 {
   "name": "chineselized",
   "main": "./lib/main",
-  "version": "0.0.2",
+  "version": "0.0.2a",
   "description": "Atom 简体中文",
   "repository": {
     "type": "git",

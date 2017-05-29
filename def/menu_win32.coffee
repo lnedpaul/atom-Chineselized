@@ -215,8 +215,8 @@ Menu:
         value: "指令面板"
       "Toggle Tree View":
         value: "树状图"
-      "Toggle Tool Bar":
-        value: "工具栏切换"
+      # "Toggle Tool Bar":
+      #   value: "工具栏切换"
   "&Selection":
     value: "选取(&S)"
     submenu:
@@ -294,10 +294,10 @@ Menu:
         value: "查看授权(&L)"
       "&Documentation":
         value: "说明文档(&D)"
-      Roadmap:
-        value: "发展路线图"
-      "Check for Update":
-        value: "检查更新"
+      # "Roadmap":
+      #   value: "发展路线图"
+      # "Check for Update":
+      #   value: "检查更新"
       "Frequently Asked Questions":
         value: "常见问题"
       "Community Discussions":
