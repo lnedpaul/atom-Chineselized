@@ -51,11 +51,11 @@ class PreferencesSettings
   @localizeKeybindingsPanel: () =>
     info = @sv.querySelector('.keybinding-panel>div:nth-child(2)')
     unless PU.isAlreadyLocalized(info)
-      info.querySelector('span:nth-child(2)').textContent = "键绑定"
-      info.querySelector('span:nth-child(4)').textContent = "请点击（副本）"
-      info.querySelector('a.link').textContent = "快捷键映射文件"
+      info.querySelector('span:nth-child(2)').textContent = "可以通过复制和粘贴（副本）"
+      info.querySelector('span:nth-child(4)').textContent = "到"
+      info.querySelector('a.link').textContent = "快捷键设置"
       span = document.createElement('span')
-      span.textContent = "粘贴它们来修改快捷键。"
+      span.textContent = "覆盖映射文件。"
       info.appendChild(span)
       info.setAttribute('data-localized', 'true')
 

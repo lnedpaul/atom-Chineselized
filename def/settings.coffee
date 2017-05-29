@@ -69,6 +69,14 @@ Settings:
         id: 'editor-settings-note'
         html: '以下为文字编辑相关的设置。部分设置可能会被相关编程语言的扩展包所覆盖。如果要浏览编程语言的扩展包设置，请到「<a class="link packages-open">已安装的扩展包</a>」卡片列表中设置该语言。'
       }
+      # {
+      #   id: 'system-settings-note'
+      #   html: '以下设置决定了Atom如何整合到你的操作系统当中。'
+      # }
+      # {
+      #   id: 'keybindings'
+      #   html: '可以通过复制和粘贴这些绑定的快捷键覆盖到「<a class="link keymap.cson"></a>」'
+      # }
     ]
     controls: [
       {
@@ -321,7 +329,7 @@ Settings:
       }
       {
         id: 'system.windows.shell-menu-folders'
-        title: "在 文件夹 右键菜单中显示 Atom"
+        title: "在【文件夹】右键菜单中显示 Atom"
         desc: "在文件管理器中的【文件夹】右键菜单中添加「使用Atom打开(Open with Atom)」选项。"
       }
     ]
