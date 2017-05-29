@@ -4,11 +4,11 @@ Menu:
     value: "文件(&F)"
     submenu:
       "New &Window":
-        value: "新建窗口(&W)"
+        value: "新建窗口"
       "&New File":
-        value: "新建文件(&N)"
+        value: "新建文件"
       "&Open File…":
-        value: "打开文件(&O)…"
+        value: "打开文件…"
       "Open Folder…":
         value: "打开文件夹…"
       "Add Project Folder…":
@@ -19,9 +19,9 @@ Menu:
           "Clear Project History":
             value: "清除项目历史"
       "Reopen Last &Item":
-        value: "重新打开最后对象(&I)"
+        value: "重新打开最后对象"
       "Se&ttings":
-        value: "设置(&T)"
+        value: "设置"
       "Config…":
         value: "个人配置…"
       "Init Script…":
@@ -33,100 +33,100 @@ Menu:
       "Stylesheet…":
         value: "样式表…"
       "&Save":
-        value: "保存(&S)"
+        value: "保存"
       "Save &As…":
-        value: "另存为(&A)…"
+        value: "另存为…"
       "Save A&ll":
-        value: "全部保存(&L)"
+        value: "全部保存"
       "&Close Tab":
         value: "关闭标签"
       "Close &Pane":
-        value: "关闭面板(&P)"
+        value: "关闭面板"
       "Clos&e Window":
-        value: "关闭窗口(&E)"
+        value: "关闭窗口"
       "E&xit":
-        value: "退出(&X)"
+        value: "退出"
       "Close All Tabs":
         value: "关闭所有标签"
   "&Edit":
     value: "编辑(&E)"
     submenu:
       "&Undo":
-        value: "还原(&U)"
+        value: "还原"
       "&Redo":
-        value: "重做(&R)"
+        value: "重做"
       "Cu&t":
-        value: "剪切(&T)"
+        value: "剪切"
       "&Copy":
-        value: "复制(&C)"
+        value: "复制"
       "Copy Pat&h":
         value: "复制路径"
       "&Paste":
-        value: "粘贴(&P)"
+        value: "粘贴"
       "Select &All":
-        value: "全选(&A)"
+        value: "全选"
       "&Toggle Comments":
-        value: "注释切换(&T)"
+        value: "注释切换"
       Lines:
         value: "行"
         submenu:
           "&Indent":
-            value: "增加缩进(&I)"
+            value: "增加缩进"
           "&Outdent":
-            value: "减少缩进(&O)"
+            value: "减少缩进"
           "&Auto Indent":
-            value: "自动缩进(&A)"
+            value: "自动缩进"
           "Move Line &Up":
-            value: "向上移动行(&U)"
+            value: "向上移动行"
           "Move Line &Down":
-            value: "向下移动行(&D)"
+            value: "向下移动行"
           "Du&plicate Lines":
-            value: "复制行(&P)"
+            value: "复制行"
           "D&elete Line":
-            value: "删除行(&E)"
+            value: "删除行"
           "&Join Lines":
-            value: "合并行(&J)"
+            value: "合并行"
       Columns:
         value: "列"
         submenu:
           "Move Selection &Left":
-            value: "向左移动所选对象(&L)"
+            value: "向左移动所选对象"
           "Move Selection &Right":
-            value: "向右移动所选对象(&R)"
+            value: "向右移动所选对象"
       Text:
         value: "文本"
         submenu:
           "&Upper Case":
-            value: "转换为大写(&U)"
+            value: "转换为大写"
           "&Lower Case":
-            value: "转换为小写(&L)"
+            value: "转换为小写"
           "Delete to End of &Word":
-            value: "删除至词尾(&W)"
+            value: "删除至词尾"
           "Delete to Previous Word Boundary":
             value: "删除前一词"
           "Delete to Next Word Boundary":
             value: "删除后一词"
           "&Delete Line":
-            value: "删除整行(&D)"
+            value: "删除整行"
           "&Transpose":
-            value: "前后转换(&T)"
+            value: "前后转换"
       Folding:
         value: "折叠代码"
         submenu:
           "&Fold":
-            value: "折叠(&F)"
+            value: "折叠"
           "&Unfold":
-            value: "展开(&U)"
+            value: "展开"
           "Unfold &All":
-            value: "展开全部(&A)"
+            value: "展开全部"
           "Fol&d All":
-            value: "折叠全部(&D)"
+            value: "折叠全部"
           "Fold Level 1":
             value: "折叠第1层"
           "Fold Level 2":
             value: "折叠第2层"
           "Fold Level 3":
-            value: "折叠第3层3"
+            value: "折叠第3层"
           "Fold Level 4":
             value: "折叠第4层"
           "Fold Level 5":
@@ -162,7 +162,7 @@ Menu:
     value: "查看(&V)"
     submenu:
       "Toggle &Full Screen":
-        value: "切换全屏(&F)"
+        value: "切换全屏"
       "Toggle Menu Bar":
         value: "切换菜单栏"
       Panes:
@@ -194,23 +194,23 @@ Menu:
         value: "开发者"
         submenu:
           "Open In &Dev Mode…":
-            value: "在开发者模式中打开(&D)…"
+            value: "在开发者模式中打开…"
           "&Reload Window":
-            value: "重新加载窗口(&R)"
+            value: "重新加载窗口"
           "Run Package &Specs":
-            value: "执行扩展规格(&S)"
+            value: "执行扩展规格"
           "Run Benchmarks":
             value: "执行基准测试"
           "Toggle Developer &Tools":
-            value: "开发者工具(&T)"
+            value: "开发者工具"
       "&Increase Font Size":
-        value: "增大字号(&I)"
+        value: "增大字号"
       "&Decrease Font Size":
-        value: "减小字号(&D)"
+        value: "减小字号"
       "Re&set Font Size":
-        value: "重设字号(&S)"
+        value: "重设字号"
       "Toggle Soft &Wrap":
-        value: "自动换行(&W)"
+        value: "自动换行"
       "Toggle Command Palette":
         value: "指令面板"
       "Toggle Tree View":
@@ -221,31 +221,31 @@ Menu:
     value: "选取(&S)"
     submenu:
       "Add Selection &Above":
-        value: "向上选取(&A)"
+        value: "向上选取"
       "Add Selection &Below":
-        value: "向下选取(&B)"
+        value: "向下选取"
       "S&plit into Lines":
-        value: "多行同时操作模式(&P)"
+        value: "多行同时操作模式"
       "Single Selection":
         value: "解除同时操作模式"
       "Select to &Top":
-        value: "选取至文件顶部(&T)"
+        value: "选取至文件顶部"
       "Select to Botto&m":
-        value: "选取至文件底部(&M)"
+        value: "选取至文件底部"
       "Select &Line":
-        value: "选取行(&L)"
+        value: "选取行"
       "Select &Word":
-        value: "选取词(&W)"
+        value: "选取词"
       "Select to Beginning of W&ord":
-        value: "选取至词首(&O)"
+        value: "选取至词首"
       "Select to Beginning of L&ine":
-        value: "选取至行首(&I)"
+        value: "选取至行首"
       "Select to First &Character of Line":
-        value: "选取至行內的第一个字符(&C)"
+        value: "选取至行內的第一个字符"
       "Select to End of Wor&d":
-        value: "选取至词尾(&D)"
+        value: "选取至词尾"
       "Select to End of Lin&e":
-        value: "选择至行尾(&E)"
+        value: "选择至行尾"
       "Select Inside Brackets":
         value: "选择括号內容"
   "F&ind":
@@ -289,11 +289,11 @@ Menu:
     value: "帮助(&H)"
     submenu:
       "View &Terms of Use":
-        value: "查看使用条款(&T)"
+        value: "查看使用条款"
       "View &License":
-        value: "查看授权(&L)"
+        value: "查看授权"
       "&Documentation":
-        value: "说明文档(&D)"
+        value: "说明文档"
       # "Roadmap":
       #   value: "发展路线图"
       # "Check for Update":
